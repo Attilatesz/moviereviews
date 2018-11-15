@@ -1,0 +1,20 @@
+<div class="review">
+    <div class="review-rating">
+        <% review.rating.to_i.times do  %>
+            <span class="glyphicon glyphicon-star"></span>
+        <% end %>
+        <% review.blank_stars.times do  %>
+            <span class="glyphicon glyphicon-star-empty"></span>
+        <% end %>
+    </div>
+    <p><%= review.comment %></p>
+
+    <% if user_signed_in? %>
+        <% if review.user_id == current_user.id %>
+            <div class="links btn-group">
+                <%= link_to "Edit", edit_movie_review_path(review.movie, review), class: "btn btn-custom"%>
+                <%= link_to "Delete", movie_review_path(review.movie, review), class: "btn btn-custom", method: :delete, data: { confirm: "Are you sure?" } %>
+            </div>
+        <% end %>
+    <% end %>
+</div>
