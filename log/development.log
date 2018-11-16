@@ -16883,3 +16883,974 @@ Migrating to AddMovieIdToReviews (20181114102441)
   ↳ /Users/sloszarattila/.rbenv/versions/2.5.3/bin/rake:23
   [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ /Users/sloszarattila/.rbenv/versions/2.5.3/bin/rake:23
+Started GET "/" for 127.0.0.1 at 2018-11-16 13:44:03 +0100
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sloszarattila/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:3
+  Rendered movies/index.html.erb within layouts/application (6.5ms)
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:29
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:37
+Completed 200 OK in 807ms (Views: 751.1ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-11-16 13:44:13 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (99.2ms)
+  [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:29
+Completed 200 OK in 271ms (Views: 238.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-16 13:44:15 +0100
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:3
+  Rendered movies/index.html.erb within layouts/application (9.4ms)
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:29
+Completed 200 OK in 135ms (Views: 127.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-16 13:51:26 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (4.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (35.5ms)
+  [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:29
+Completed 200 OK in 244ms (Views: 232.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-16 13:51:31 +0100
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:3
+  Rendered movies/index.html.erb within layouts/application (3.4ms)
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:29
+Completed 200 OK in 128ms (Views: 121.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-16 14:11:17 +0100
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:3
+  Rendered movies/index.html.erb within layouts/application (25.0ms)
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:29
+Completed 200 OK in 479ms (Views: 424.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-16 14:11:23 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (5.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (67.8ms)
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:29
+Completed 200 OK in 249ms (Views: 241.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-11-16 14:11:27 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (34.5ms)
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:29
+Completed 200 OK in 204ms (Views: 200.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-11-16 14:11:34 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PpJ1zV06rTpFyQFW48vM3m+VivtdW/FgXs3pFogZaqQJ642DMGQglJLQAQLMM7yjGzU47M8Yvr7WzIfYhx1ntA==", "user"=>{"email"=>"attila@attila.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/sloszarattila/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (1.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "attila@attila.com"], ["LIMIT", 1]]
+  ↳ /Users/sloszarattila/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (2.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "attila@attila.com"], ["encrypted_password", "$2a$11$XHGG3WRQ5bBXFmBFlCnPj.mjMbdthM8W5jEMrc2fZXS8fhGWLcnlu"], ["created_at", "2018-11-16 13:11:34.682151"], ["updated_at", "2018-11-16 13:11:34.682151"]]
+  ↳ /Users/sloszarattila/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/sloszarattila/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 252ms (ActiveRecord: 5.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-16 14:11:34 +0100
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:3
+  Rendered movies/index.html.erb within layouts/application (3.6ms)
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:29
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:37
+Completed 200 OK in 120ms (Views: 111.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2018-11-16 14:11:36 +0100
+Processing by MoviesController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/sloszarattila/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/movies_controller.rb:19
+  Rendering movies/new.html.erb within layouts/application
+  Rendered movies/_form.html.erb (2.0ms)
+  Rendered movies/new.html.erb within layouts/application (6.1ms)
+Completed 500 Internal Server Error in 93ms (ActiveRecord: 2.2ms)
+
+
+  
+SyntaxError (/Users/sloszarattila/practice/app/views/movies/_form.html.erb:2: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+...er.append=( f.input, :category, label: "Category");@output_b...
+...                              ^):
+  
+app/views/movies/_form.html.erb:2: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+app/views/movies/new.html.erb:7:in `_app_views_movies_new_html_erb__1757288635357256917_70206153702380'
+Started GET "/movies/new" for 127.0.0.1 at 2018-11-16 14:11:49 +0100
+Processing by MoviesController#new as HTML
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/sloszarattila/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/movies_controller.rb:19
+  Rendering movies/new.html.erb within layouts/application
+  Rendered movies/_form.html.erb (150.3ms)
+  Rendered movies/new.html.erb within layouts/application (165.6ms)
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:29
+Completed 200 OK in 624ms (Views: 444.6ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/movies" for 127.0.0.1 at 2018-11-16 14:12:09 +0100
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6u3cHfErqt/ZmH1crbU6Vky5hk985Mlz/YN6uWseD12X9kAW+xzFyyaf6MU0bhiZnKKLjl7cucSlSo5Wwb/xmg==", "movie"=>{"category"=>"fantasy", "movie_img"=>#<ActionDispatch::Http::UploadedFile:0x00007fb448ed2598 @tempfile=#<Tempfile:/var/folders/ys/3dhpw_yn6c5bs136zctgxy180000gp/T/RackMultipart20181116-99697-17ivur5.jpg>, @original_filename="iw.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"movie[movie_img]\"; filename=\"iw.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"Avengers: Infinity War", "description"=>"asd", "director"=>"Richard Marquand"}, "commit"=>"Create Movie"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:23
+Unpermitted parameter: :category
+[paperclip] Trying to link /var/folders/ys/3dhpw_yn6c5bs136zctgxy180000gp/T/RackMultipart20181116-99697-17ivur5.jpg to /var/folders/ys/3dhpw_yn6c5bs136zctgxy180000gp/T/856d3eb283c3bc43b95ba734a3e794f120181116-99697-133z9ms.jpg
+[paperclip] Trying to link /var/folders/ys/3dhpw_yn6c5bs136zctgxy180000gp/T/856d3eb283c3bc43b95ba734a3e794f120181116-99697-133z9ms.jpg to /var/folders/ys/3dhpw_yn6c5bs136zctgxy180000gp/T/856d3eb283c3bc43b95ba734a3e794f120181116-99697-1j5yor0.jpg
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/var/folders/ys/3dhpw_yn6c5bs136zctgxy180000gp/T/856d3eb283c3bc43b95ba734a3e794f120181116-99697-1j5yor0.jpg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/var/folders/ys/3dhpw_yn6c5bs136zctgxy180000gp/T/856d3eb283c3bc43b95ba734a3e794f120181116-99697-133z9ms.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/var/folders/ys/3dhpw_yn6c5bs136zctgxy180000gp/T/856d3eb283c3bc43b95ba734a3e794f120181116-99697-133z9ms.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/var/folders/ys/3dhpw_yn6c5bs136zctgxy180000gp/T/856d3eb283c3bc43b95ba734a3e794f120181116-99697-133z9ms.jpg[0]' -auto-orient -resize "250x350>" '/var/folders/ys/3dhpw_yn6c5bs136zctgxy180000gp/T/964b118e132a89a5bfab1bc4e4b8bcb420181116-99697-1aqkyps'
+[paperclip] Trying to link /var/folders/ys/3dhpw_yn6c5bs136zctgxy180000gp/T/964b118e132a89a5bfab1bc4e4b8bcb420181116-99697-1aqkyps to /var/folders/ys/3dhpw_yn6c5bs136zctgxy180000gp/T/fd928a406db9c628817dd9bfc3839c8d20181116-99697-18jjjlf
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/var/folders/ys/3dhpw_yn6c5bs136zctgxy180000gp/T/856d3eb283c3bc43b95ba734a3e794f120181116-99697-133z9ms.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/var/folders/ys/3dhpw_yn6c5bs136zctgxy180000gp/T/856d3eb283c3bc43b95ba734a3e794f120181116-99697-133z9ms.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/var/folders/ys/3dhpw_yn6c5bs136zctgxy180000gp/T/856d3eb283c3bc43b95ba734a3e794f120181116-99697-133z9ms.jpg[0]' -auto-orient -resize "325x475>" '/var/folders/ys/3dhpw_yn6c5bs136zctgxy180000gp/T/964b118e132a89a5bfab1bc4e4b8bcb420181116-99697-a6c0r2'
+[paperclip] Trying to link /var/folders/ys/3dhpw_yn6c5bs136zctgxy180000gp/T/964b118e132a89a5bfab1bc4e4b8bcb420181116-99697-a6c0r2 to /var/folders/ys/3dhpw_yn6c5bs136zctgxy180000gp/T/a162a9346ec8b4021082e4d617d184ea20181116-99697-c2avlf
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/movies_controller.rb:26
+[paperclip] Trying to link /var/folders/ys/3dhpw_yn6c5bs136zctgxy180000gp/T/856d3eb283c3bc43b95ba734a3e794f120181116-99697-133z9ms.jpg to /var/folders/ys/3dhpw_yn6c5bs136zctgxy180000gp/T/856d3eb283c3bc43b95ba734a3e794f120181116-99697-14kdxd2.jpg
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/var/folders/ys/3dhpw_yn6c5bs136zctgxy180000gp/T/856d3eb283c3bc43b95ba734a3e794f120181116-99697-14kdxd2.jpg'
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/movies_controller.rb:26
+  Rendering movies/new.html.erb within layouts/application
+  Rendered movies/_form.html.erb (18.9ms)
+  Rendered movies/new.html.erb within layouts/application (24.2ms)
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:29
+Completed 200 OK in 717ms (Views: 144.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-16 14:12:15 +0100
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:3
+  Rendered movies/index.html.erb within layouts/application (3.9ms)
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:29
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:37
+Completed 200 OK in 139ms (Views: 131.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2018-11-16 14:14:39 +0100
+Processing by MoviesController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/sloszarattila/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/movies_controller.rb:19
+  Rendering movies/new.html.erb within layouts/application
+  Rendered movies/_form.html.erb (18.0ms)
+  Rendered movies/new.html.erb within layouts/application (22.8ms)
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:29
+Completed 200 OK in 258ms (Views: 172.6ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-16 14:30:50 +0100
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sloszarattila/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:3
+  Rendered movies/index.html.erb within layouts/application (10.0ms)
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:29
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:37
+Completed 500 Internal Server Error in 4248ms (ActiveRecord: 4.8ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"new", :controller=>"categories"}, missing required keys: [:movie_id]):
+    38:             <li><%= link_to "Add Movie", new_movie_path %></li>
+    39:           <% end %>
+    40:           <% if user_signed_in? %>
+    41:             <li><%= link_to "Add New Category", new_movie_category_path %></li>
+    42:           <% end %>
+    43:           <% if !user_signed_in? %>
+    44:             <li><%= link_to "Sign Up", new_user_registration_path %></li>
+  
+app/views/layouts/application.html.erb:41:in `_app_views_layouts_application_html_erb__4291751823503356039_70154964928020'
+Started GET "/" for 127.0.0.1 at 2018-11-16 14:34:48 +0100
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:3
+  Rendered movies/index.html.erb within layouts/application (62.8ms)
+  [1m[36mCategory Load (1.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:29
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:37
+Completed 500 Internal Server Error in 491ms (ActiveRecord: 3.5ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"new", :controller=>"categories"}, missing required keys: [:movie_id]):
+    38:             <li><%= link_to "Add Movie", new_movie_path %></li>
+    39:           <% end %>
+    40:           <% if user_signed_in? %>
+    41:             <li><%= link_to "Add New Category", new_movie_category_path %></li>
+    42:           <% end %>
+    43:           <% if !user_signed_in? %>
+    44:             <li><%= link_to "Sign Up", new_user_registration_path %></li>
+  
+app/views/layouts/application.html.erb:41:in `_app_views_layouts_application_html_erb__4291751823503356039_70154966405800'
+Started GET "/" for 127.0.0.1 at 2018-11-16 14:34:50 +0100
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:3
+  Rendered movies/index.html.erb within layouts/application (2.0ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:29
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:37
+Completed 500 Internal Server Error in 148ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"new", :controller=>"categories"}, missing required keys: [:movie_id]):
+    38:             <li><%= link_to "Add Movie", new_movie_path %></li>
+    39:           <% end %>
+    40:           <% if user_signed_in? %>
+    41:             <li><%= link_to "Add New Category", new_movie_category_path %></li>
+    42:           <% end %>
+    43:           <% if !user_signed_in? %>
+    44:             <li><%= link_to "Sign Up", new_user_registration_path %></li>
+  
+app/views/layouts/application.html.erb:41:in `_app_views_layouts_application_html_erb__4291751823503356039_70154983554300'
+Started GET "/categories/new" for 127.0.0.1 at 2018-11-16 14:36:01 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/categories/new"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/categories" for 127.0.0.1 at 2018-11-16 14:36:08 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/categories"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/movies/categories" for 127.0.0.1 at 2018-11-16 14:36:35 +0100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"categories"}
+  [1m[36mMovie Load (1.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:59
+Completed 404 Not Found in 22ms (ActiveRecord: 3.9ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Movie with 'id'=categories):
+  
+app/controllers/movies_controller.rb:59:in `find_movie'
+Started GET "/movies/1" for 127.0.0.1 at 2018-11-16 14:36:48 +0100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:59
+Completed 404 Not Found in 4ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Movie with 'id'=1):
+  
+app/controllers/movies_controller.rb:59:in `find_movie'
+Started GET "/" for 127.0.0.1 at 2018-11-16 14:37:13 +0100
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:3
+  Rendered movies/index.html.erb within layouts/application (11.4ms)
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:29
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:37
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" ORDER BY created_at DESC LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Users/sloszarattila/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" ORDER BY created_at DESC LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Users/sloszarattila/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Movie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" ORDER BY created_at DESC LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Users/sloszarattila/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" ORDER BY created_at DESC LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Users/sloszarattila/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" ORDER BY created_at DESC LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Users/sloszarattila/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" ORDER BY created_at DESC LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Users/sloszarattila/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" ORDER BY created_at DESC LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Users/sloszarattila/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" ORDER BY created_at DESC LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Users/sloszarattila/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 1140ms (ActiveRecord: 5.8ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_movie_category_path' for #<#<Class:0x00007f9c74c01f30>:0x00007f9c74c002c0>
+Did you mean?  new_category_path):
+    38:             <li><%= link_to "Add Movie", new_movie_path %></li>
+    39:           <% end %>
+    40:           <% if user_signed_in? %>
+    41:             <li><%= link_to "Add New Category", new_movie_category_path %></li>
+    42:           <% end %>
+    43:           <% if !user_signed_in? %>
+    44:             <li><%= link_to "Sign Up", new_user_registration_path %></li>
+  
+app/views/layouts/application.html.erb:41:in `_app_views_layouts_application_html_erb__4291751823503356039_70154943324120'
+Started GET "/" for 127.0.0.1 at 2018-11-16 14:37:16 +0100
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:3
+  Rendered movies/index.html.erb within layouts/application (102.8ms)
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:29
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:37
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" ORDER BY created_at DESC LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Users/sloszarattila/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" ORDER BY created_at DESC LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Users/sloszarattila/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" ORDER BY created_at DESC LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Users/sloszarattila/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" ORDER BY created_at DESC LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Users/sloszarattila/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" ORDER BY created_at DESC LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Users/sloszarattila/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" ORDER BY created_at DESC LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Users/sloszarattila/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" ORDER BY created_at DESC LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Users/sloszarattila/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" ORDER BY created_at DESC LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Users/sloszarattila/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 1512ms (ActiveRecord: 1.7ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_movie_category_path' for #<#<Class:0x00007f9c74c01f30>:0x00007f9c73dedbb0>
+Did you mean?  new_category_path):
+    38:             <li><%= link_to "Add Movie", new_movie_path %></li>
+    39:           <% end %>
+    40:           <% if user_signed_in? %>
+    41:             <li><%= link_to "Add New Category", new_movie_category_path %></li>
+    42:           <% end %>
+    43:           <% if !user_signed_in? %>
+    44:             <li><%= link_to "Sign Up", new_user_registration_path %></li>
+  
+app/views/layouts/application.html.erb:41:in `_app_views_layouts_application_html_erb__4291751823503356039_70154967821180'
+Started GET "/" for 127.0.0.1 at 2018-11-16 14:37:53 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/sloszarattila/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:3
+  Rendered movies/index.html.erb within layouts/application (7.5ms)
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:29
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:37
+Completed 200 OK in 772ms (Views: 732.7ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/categories/new" for 127.0.0.1 at 2018-11-16 14:37:58 +0100
+Processing by CategoriesController#new as HTML
+  Rendering categories/new.html.erb within layouts/application
+  Rendered categories/_form.html.erb (1.8ms)
+  Rendered categories/new.html.erb within layouts/application (16.9ms)
+Completed 500 Internal Server Error in 96ms (ActiveRecord: 1.5ms)
+
+
+  
+SyntaxError (/Users/sloszarattila/practice/app/views/categories/_form.html.erb:1: syntax error, unexpected ')', expecting ']'
+...d=  simple_form_for([@category) do |f| @output_buffer.safe_a...
+...                              ^
+/Users/sloszarattila/practice/app/views/categories/_form.html.erb:6: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/categories/_form.html.erb:1: syntax error, unexpected ')', expecting ']'
+app/views/categories/_form.html.erb:6: syntax error, unexpected keyword_ensure, expecting end-of-input
+app/views/categories/new.html.erb:7:in `_app_views_categories_new_html_erb__33317049681415247_70093444075380'
+Started GET "/categories/new" for 127.0.0.1 at 2018-11-16 14:38:23 +0100
+Processing by CategoriesController#new as HTML
+  Rendering categories/new.html.erb within layouts/application
+  Rendered categories/_form.html.erb (145.4ms)
+  Rendered categories/new.html.erb within layouts/application (154.2ms)
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:29
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:37
+Completed 200 OK in 308ms (Views: 285.1ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/categories" for 127.0.0.1 at 2018-11-16 14:38:29 +0100
+Processing by CategoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IIYT4A8dURUzqWXL6Oo6/RTwiozzTviI4QlDJloE0hNdnY/rBSo+Acyu8FJxMRgyxOuHTdF2iD+5wLfJ8KUs1A==", "category"=>{"name"=>"Fantasy"}, "commit"=>"Create Category"}
+Completed 500 Internal Server Error in 492ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `review_params' for #<CategoriesController:0x00007f7fcd3c5650>):
+  
+app/controllers/categories_controller.rb:7:in `create'
+Started POST "/categories" for 127.0.0.1 at 2018-11-16 14:38:47 +0100
+Processing by CategoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IIYT4A8dURUzqWXL6Oo6/RTwiozzTviI4QlDJloE0hNdnY/rBSo+Acyu8FJxMRgyxOuHTdF2iD+5wLfJ8KUs1A==", "category"=>{"name"=>"Fantasy"}, "commit"=>"Create Category"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/categories_controller.rb:9
+  [1m[36mCategory Create (0.7ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Fantasy"], ["created_at", "2018-11-16 13:38:48.023088"], ["updated_at", "2018-11-16 13:38:48.023088"]]
+  ↳ app/controllers/categories_controller.rb:9
+  [1m[35m (6.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/categories_controller.rb:9
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 7.9ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"movies", :id=>nil}, missing required keys: [:id]):
+  
+app/controllers/categories_controller.rb:10:in `create'
+Started POST "/categories" for 127.0.0.1 at 2018-11-16 14:39:08 +0100
+Processing by CategoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IIYT4A8dURUzqWXL6Oo6/RTwiozzTviI4QlDJloE0hNdnY/rBSo+Acyu8FJxMRgyxOuHTdF2iD+5wLfJ8KUs1A==", "category"=>{"name"=>"Fantasy"}, "commit"=>"Create Category"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/categories_controller.rb:9
+  [1m[36mCategory Create (0.6ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Fantasy"], ["created_at", "2018-11-16 13:39:08.219958"], ["updated_at", "2018-11-16 13:39:08.219958"]]
+  ↳ app/controllers/categories_controller.rb:9
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/categories_controller.rb:9
+Redirected to http://localhost:3000root
+Completed 302 Found in 17ms (ActiveRecord: 3.8ms)
+
+
+Started POST "/categories" for 127.0.0.1 at 2018-11-16 14:39:25 +0100
+Processing by CategoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IIYT4A8dURUzqWXL6Oo6/RTwiozzTviI4QlDJloE0hNdnY/rBSo+Acyu8FJxMRgyxOuHTdF2iD+5wLfJ8KUs1A==", "category"=>{"name"=>"Fantasy"}, "commit"=>"Create Category"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/categories_controller.rb:9
+  [1m[36mCategory Create (0.6ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Fantasy"], ["created_at", "2018-11-16 13:39:25.265648"], ["updated_at", "2018-11-16 13:39:25.265648"]]
+  ↳ app/controllers/categories_controller.rb:9
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/categories_controller.rb:9
+Redirected to http://localhost:3000index
+Completed 302 Found in 33ms (ActiveRecord: 6.5ms)
+
+
+Started POST "/categories" for 127.0.0.1 at 2018-11-16 14:39:57 +0100
+Processing by CategoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IIYT4A8dURUzqWXL6Oo6/RTwiozzTviI4QlDJloE0hNdnY/rBSo+Acyu8FJxMRgyxOuHTdF2iD+5wLfJ8KUs1A==", "category"=>{"name"=>"Fantasy"}, "commit"=>"Create Category"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/categories_controller.rb:9
+  [1m[36mCategory Create (1.0ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Fantasy"], ["created_at", "2018-11-16 13:39:57.726634"], ["updated_at", "2018-11-16 13:39:57.726634"]]
+  ↳ app/controllers/categories_controller.rb:9
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/categories_controller.rb:9
+Redirected to http://localhost:3000/
+Completed 302 Found in 25ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-16 14:39:57 +0100
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:3
+  Rendered movies/index.html.erb within layouts/application (5.9ms)
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:29
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:37
+Completed 200 OK in 252ms (Views: 233.5ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/movies?category=Fantasy" for 127.0.0.1 at 2018-11-16 14:40:01 +0100
+Processing by MoviesController#index as HTML
+  Parameters: {"category"=>"Fantasy"}
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."name" = ? LIMIT ?[0m  [["name", "Fantasy"], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:9
+  Rendering movies/index.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "movies" WHERE "movies"."category_id" = ?[0m  [["category_id", 1]]
+  ↳ app/views/movies/index.html.erb:3
+  Rendered movies/index.html.erb within layouts/application (2.2ms)
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:29
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:37
+Completed 200 OK in 108ms (Views: 98.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2018-11-16 14:40:04 +0100
+Processing by MoviesController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/sloszarattila/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/movies_controller.rb:19
+  Rendering movies/new.html.erb within layouts/application
+  Rendered movies/_form.html.erb (15.2ms)
+  Rendered movies/new.html.erb within layouts/application (18.8ms)
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:29
+Completed 200 OK in 168ms (Views: 102.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-16 14:40:15 +0100
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:3
+  Rendered movies/index.html.erb within layouts/application (4.7ms)
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:29
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:37
+Completed 200 OK in 130ms (Views: 121.2ms | ActiveRecord: 1.1ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2018-11-16 14:41:16 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"M0fFxocPY3DNwSI/lZDqyXk0sIlxn9bmPR9IJ8FrKvVOXFnNjTgMZDLGt6YMS8gGqS+9SFOnplFl1rzIa8rUMg=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/sloszarattila/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/sloszarattila/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/sloszarattila/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 36ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-16 14:41:16 +0100
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:3
+  Rendered movies/index.html.erb within layouts/application (6.1ms)
+  [1m[36mCategory Load (1.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:29
+Completed 200 OK in 169ms (Views: 154.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/movies?category=Fantasy" for 127.0.0.1 at 2018-11-16 14:42:18 +0100
+Processing by MoviesController#index as HTML
+  Parameters: {"category"=>"Fantasy"}
+  [1m[36mCategory Load (2.2ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."name" = ? LIMIT ?[0m  [["name", "Fantasy"], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:9
+  Rendering movies/index.html.erb within layouts/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "movies" WHERE "movies"."category_id" = ?[0m  [["category_id", 1]]
+  ↳ app/views/movies/index.html.erb:3
+  Rendered movies/index.html.erb within layouts/application (8.0ms)
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:29
+Completed 200 OK in 341ms (Views: 301.8ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-16 14:42:24 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (50.6ms)
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:29
+Completed 200 OK in 308ms (Views: 263.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-16 14:42:29 +0100
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:3
+  Rendered movies/index.html.erb within layouts/application (2.8ms)
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:29
+Completed 200 OK in 143ms (Views: 134.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2018-11-16 14:43:17 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (3.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (74.0ms)
+  [1m[36mCategory Load (1.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:29
+Completed 200 OK in 362ms (Views: 326.2ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2018-11-16 14:44:00 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2qdf2VTiyhnhZt7ITWugOSfH7lHFtgX71S+cr48Xn8Pv4zAiTybnuHPZLE26ibFP62ILN5/iAZYB4d7+LVHHLw==", "user"=>{"email"=>"attila@attila.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "attila@attila.com"], ["LIMIT", 1]]
+  ↳ /Users/sloszarattila/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 253ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-16 14:44:00 +0100
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:3
+  Rendered movies/index.html.erb within layouts/application (3.4ms)
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:29
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:37
+  [1m[36mMovie Load (0.7ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" ORDER BY created_at DESC LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Users/sloszarattila/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Movie Load (0.1ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" ORDER BY created_at DESC LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Users/sloszarattila/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" ORDER BY created_at DESC LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Users/sloszarattila/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" ORDER BY created_at DESC LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Users/sloszarattila/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" ORDER BY created_at DESC LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Users/sloszarattila/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" ORDER BY created_at DESC LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Users/sloszarattila/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" ORDER BY created_at DESC LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Users/sloszarattila/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" ORDER BY created_at DESC LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ /Users/sloszarattila/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Completed 500 Internal Server Error in 705ms (ActiveRecord: 1.9ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `show_category_path' for #<#<Class:0x00007f7fcf12b690>:0x00007f7fcd33c800>
+Did you mean?  new_category_path):
+    38:             <li><%= link_to "Add Movie", new_movie_path %></li>
+    39:           <% end %>
+    40:           <% if user_signed_in? %>
+    41:             <li><%= link_to "Edit Categories", show_category_path %></li>
+    42:           <% end %>
+    43:           <% if !user_signed_in? %>
+    44:             <li><%= link_to "Sign Up", new_user_registration_path %></li>
+  
+app/views/layouts/application.html.erb:41:in `_app_views_layouts_application_html_erb__3634017245614146644_70093408335720'
+Started GET "/" for 127.0.0.1 at 2018-11-16 14:44:13 +0100
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:3
+  Rendered movies/index.html.erb within layouts/application (4.1ms)
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:29
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:37
+Completed 500 Internal Server Error in 266ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"categories"}, missing required keys: [:id]):
+    38:             <li><%= link_to "Add Movie", new_movie_path %></li>
+    39:           <% end %>
+    40:           <% if user_signed_in? %>
+    41:             <li><%= link_to "Edit Categories", category_path %></li>
+    42:           <% end %>
+    43:           <% if !user_signed_in? %>
+    44:             <li><%= link_to "Sign Up", new_user_registration_path %></li>
+  
+app/views/layouts/application.html.erb:41:in `_app_views_layouts_application_html_erb__3634017245614146644_70093452494940'
+Started GET "/" for 127.0.0.1 at 2018-11-16 14:46:46 +0100
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:3
+  Rendered movies/index.html.erb within layouts/application (22.1ms)
+  [1m[36mCategory Load (1.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:29
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:37
+Completed 200 OK in 393ms (Views: 357.0ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/categories/new" for 127.0.0.1 at 2018-11-16 14:46:58 +0100
+Processing by CategoriesController#new as HTML
+  Rendering categories/new.html.erb within layouts/application
+  Rendered categories/_form.html.erb (16.3ms)
+  Rendered categories/new.html.erb within layouts/application (20.8ms)
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:29
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:37
+Completed 200 OK in 268ms (Views: 261.2ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/categories" for 127.0.0.1 at 2018-11-16 14:47:03 +0100
+Processing by CategoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ka31gj+TLFnccnEVWN2U+cYO+lfS02Oii+lyucEsTY5fiCBCQM6kM4Cba89xY5rrZWrhIqkc9V8P0YNDiuUfZA==", "category"=>{"name"=>"hello"}, "commit"=>"Create Category"}
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/categories_controller.rb:9
+  [1m[36mCategory Create (0.8ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "hello"], ["created_at", "2018-11-16 13:47:03.795897"], ["updated_at", "2018-11-16 13:47:03.795897"]]
+  ↳ app/controllers/categories_controller.rb:9
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/categories_controller.rb:9
+Redirected to http://localhost:3000/
+Completed 302 Found in 16ms (ActiveRecord: 4.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-16 14:47:03 +0100
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:3
+  Rendered movies/index.html.erb within layouts/application (2.3ms)
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:29
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:37
+Completed 200 OK in 143ms (Views: 137.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2018-11-16 14:47:09 +0100
+Processing by MoviesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/sloszarattila/.rbenv/versions/2.5.3/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/movies_controller.rb:19
+  Rendering movies/new.html.erb within layouts/application
+  Rendered movies/_form.html.erb (9.0ms)
+  Rendered movies/new.html.erb within layouts/application (13.0ms)
+  [1m[36mCACHE Category Load (0.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:29
+Completed 200 OK in 138ms (Views: 100.5ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/movies" for 127.0.0.1 at 2018-11-16 14:47:22 +0100
+Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0N7bv6XgZWDcnffqSqJuuIRXhBHHtuv/Xd56ss7obKMWlwgc4xH/EqcDi6mekZy7Fglwx2x2UAmBtKMiV78Euw==", "category_id"=>"5", "movie"=>{"movie_img"=>#<ActionDispatch::Http::UploadedFile:0x00007f7fce981520 @tempfile=#<Tempfile:/var/folders/ys/3dhpw_yn6c5bs136zctgxy180000gp/T/RackMultipart20181116-11211-1w6irzx.jpg>, @original_filename="iw.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"movie[movie_img]\"; filename=\"iw.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"Avengers: Infinity War", "description"=>"ssadas", "director"=>"asdasd"}, "commit"=>"Create Movie"}
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:23
+[paperclip] Trying to link /var/folders/ys/3dhpw_yn6c5bs136zctgxy180000gp/T/RackMultipart20181116-11211-1w6irzx.jpg to /var/folders/ys/3dhpw_yn6c5bs136zctgxy180000gp/T/856d3eb283c3bc43b95ba734a3e794f120181116-11211-1kio4an.jpg
+[paperclip] Trying to link /var/folders/ys/3dhpw_yn6c5bs136zctgxy180000gp/T/856d3eb283c3bc43b95ba734a3e794f120181116-11211-1kio4an.jpg to /var/folders/ys/3dhpw_yn6c5bs136zctgxy180000gp/T/856d3eb283c3bc43b95ba734a3e794f120181116-11211-1ll8402.jpg
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/var/folders/ys/3dhpw_yn6c5bs136zctgxy180000gp/T/856d3eb283c3bc43b95ba734a3e794f120181116-11211-1ll8402.jpg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/var/folders/ys/3dhpw_yn6c5bs136zctgxy180000gp/T/856d3eb283c3bc43b95ba734a3e794f120181116-11211-1kio4an.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/var/folders/ys/3dhpw_yn6c5bs136zctgxy180000gp/T/856d3eb283c3bc43b95ba734a3e794f120181116-11211-1kio4an.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/var/folders/ys/3dhpw_yn6c5bs136zctgxy180000gp/T/856d3eb283c3bc43b95ba734a3e794f120181116-11211-1kio4an.jpg[0]' -auto-orient -resize "250x350>" '/var/folders/ys/3dhpw_yn6c5bs136zctgxy180000gp/T/0628a637e3ca5d4f3c090c9051272b0420181116-11211-1i7p8f5'
+[paperclip] Trying to link /var/folders/ys/3dhpw_yn6c5bs136zctgxy180000gp/T/0628a637e3ca5d4f3c090c9051272b0420181116-11211-1i7p8f5 to /var/folders/ys/3dhpw_yn6c5bs136zctgxy180000gp/T/7e2c16393b7213bfa0b5a549fd9e867b20181116-11211-1pj3xew
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/var/folders/ys/3dhpw_yn6c5bs136zctgxy180000gp/T/856d3eb283c3bc43b95ba734a3e794f120181116-11211-1kio4an.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/var/folders/ys/3dhpw_yn6c5bs136zctgxy180000gp/T/856d3eb283c3bc43b95ba734a3e794f120181116-11211-1kio4an.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/var/folders/ys/3dhpw_yn6c5bs136zctgxy180000gp/T/856d3eb283c3bc43b95ba734a3e794f120181116-11211-1kio4an.jpg[0]' -auto-orient -resize "325x475>" '/var/folders/ys/3dhpw_yn6c5bs136zctgxy180000gp/T/0628a637e3ca5d4f3c090c9051272b0420181116-11211-8snnrx'
+[paperclip] Trying to link /var/folders/ys/3dhpw_yn6c5bs136zctgxy180000gp/T/0628a637e3ca5d4f3c090c9051272b0420181116-11211-8snnrx to /var/folders/ys/3dhpw_yn6c5bs136zctgxy180000gp/T/f83cec20bba0df800ca112af645f2bf420181116-11211-n8r3ud
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/movies_controller.rb:26
+  [1m[36mCategory Load (1.5ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:26
+[paperclip] Trying to link /var/folders/ys/3dhpw_yn6c5bs136zctgxy180000gp/T/856d3eb283c3bc43b95ba734a3e794f120181116-11211-1kio4an.jpg to /var/folders/ys/3dhpw_yn6c5bs136zctgxy180000gp/T/856d3eb283c3bc43b95ba734a3e794f120181116-11211-zot4hr.jpg
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/var/folders/ys/3dhpw_yn6c5bs136zctgxy180000gp/T/856d3eb283c3bc43b95ba734a3e794f120181116-11211-zot4hr.jpg'
+  [1m[36mMovie Create (0.7ms)[0m  [1m[32mINSERT INTO "movies" ("title", "description", "director", "created_at", "updated_at", "user_id", "category_id", "movie_img_file_name", "movie_img_content_type", "movie_img_file_size", "movie_img_updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Avengers: Infinity War"], ["description", "ssadas"], ["director", "asdasd"], ["created_at", "2018-11-16 13:47:23.491580"], ["updated_at", "2018-11-16 13:47:23.491580"], ["user_id", 1], ["category_id", 5], ["movie_img_file_name", "iw.jpg"], ["movie_img_content_type", "image/jpeg"], ["movie_img_file_size", 233352], ["movie_img_updated_at", "2018-11-16 13:47:22.942780"]]
+  ↳ app/controllers/movies_controller.rb:26
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/movies_controller.rb:26
+Redirected to http://localhost:3000/
+Completed 302 Found in 657ms (ActiveRecord: 8.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-16 14:47:23 +0100
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:3
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY created_at DESC[0m
+  ↳ app/views/movies/index.html.erb:11
+  Rendered movies/index.html.erb within layouts/application (9.8ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:29
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:37
+Completed 200 OK in 200ms (Views: 193.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2018-11-16 14:47:25 +0100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT  "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:59
+  Rendering movies/show.html.erb within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT AVG("reviews"."rating") FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  ↳ app/views/movies/show.html.erb:15
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  ↳ app/views/movies/show.html.erb:19
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."movie_id" = ?[0m  [["movie_id", 1]]
+  ↳ app/views/movies/show.html.erb:32
+  Rendered collection of templates [0 times] (0.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/movies/show.html.erb:46
+  Rendered movies/show.html.erb within layouts/application (23.0ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:29
+Completed 200 OK in 123ms (Views: 111.7ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/movies?category=hello" for 127.0.0.1 at 2018-11-16 14:47:35 +0100
+Processing by MoviesController#index as HTML
+  Parameters: {"category"=>"hello"}
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."name" = ? LIMIT ?[0m  [["name", "hello"], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:9
+  Rendering movies/index.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "movies" WHERE "movies"."category_id" = ?[0m  [["category_id", 5]]
+  ↳ app/views/movies/index.html.erb:3
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."category_id" = ? ORDER BY created_at DESC[0m  [["category_id", 5]]
+  ↳ app/views/movies/index.html.erb:11
+  Rendered movies/index.html.erb within layouts/application (5.8ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:29
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:37
+Completed 200 OK in 123ms (Views: 112.8ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/movies?category=Fantasy" for 127.0.0.1 at 2018-11-16 14:47:38 +0100
+Processing by MoviesController#index as HTML
+  Parameters: {"category"=>"Fantasy"}
+  [1m[36mCategory Load (1.7ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."name" = ? LIMIT ?[0m  [["name", "Fantasy"], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:9
+  Rendering movies/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "movies" WHERE "movies"."category_id" = ?[0m  [["category_id", 1]]
+  ↳ app/views/movies/index.html.erb:3
+  Rendered movies/index.html.erb within layouts/application (2.6ms)
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:29
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:37
+Completed 200 OK in 120ms (Views: 110.8ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/movies?category=hello" for 127.0.0.1 at 2018-11-16 14:47:40 +0100
+Processing by MoviesController#index as HTML
+  Parameters: {"category"=>"hello"}
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT  "categories".* FROM "categories" WHERE "categories"."name" = ? LIMIT ?[0m  [["name", "hello"], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:9
+  Rendering movies/index.html.erb within layouts/application
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "movies" WHERE "movies"."category_id" = ?[0m  [["category_id", 5]]
+  ↳ app/views/movies/index.html.erb:3
+  [1m[36mMovie Load (0.4ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."category_id" = ? ORDER BY created_at DESC[0m  [["category_id", 5]]
+  ↳ app/views/movies/index.html.erb:11
+  Rendered movies/index.html.erb within layouts/application (5.9ms)
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:29
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:37
+Completed 200 OK in 120ms (Views: 112.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-16 14:48:49 +0100
+Processing by MoviesController#index as HTML
+  Rendering movies/index.html.erb within layouts/application
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:3
+  [1m[36mMovie Load (0.8ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY created_at DESC[0m
+  ↳ app/views/movies/index.html.erb:11
+  Rendered movies/index.html.erb within layouts/application (31.9ms)
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:29
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:37
+Completed 200 OK in 314ms (Views: 286.2ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/categories/new" for 127.0.0.1 at 2018-11-16 14:48:50 +0100
+Processing by CategoriesController#new as HTML
+  Rendering categories/new.html.erb within layouts/application
+  Rendered categories/_form.html.erb (29.6ms)
+  Rendered categories/new.html.erb within layouts/application (34.7ms)
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/views/layouts/application.html.erb:29
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:37
+Completed 200 OK in 183ms (Views: 173.4ms | ActiveRecord: 1.2ms)
+
+
